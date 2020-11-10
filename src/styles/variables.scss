@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+// COLORS
+$blue: #464ab3;
+$yellow: #f2c94c;
+$red: #f64e4c;
+$green: #3e9a4d;
+// sizes
+$desctop: 1440px;
+$tablet: 768px;
+$mobile: 320px;
+
+body {
+  margin: 0;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

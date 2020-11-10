@@ -1,0 +1,88 @@
+.main {
+  display: flex;
+  padding: 20px 40px;
+  justify-content: space-between;
+  @media (max-width: $tablet) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: $mobile) {
+    flex-wrap: wrap;
+    padding: 10px 5px;
+  }
+
+  &-left {
+    width: 30%;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (max-width: $tablet) {
+      order: 2;
+      width: 100%;
+      flex-direction: row;
+      margin-right: 0;
+    }
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+    }
+  }
+  &-right {
+    @media (max-width: $tablet) {
+      order: 1;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 0;
+    }
+  }
+  &-ships {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $tablet) {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
+}
+.score {
+  display: flex;
+  border: 1px solid darkgray;
+  margin-bottom: 20px;
+  @media (max-width: $tablet) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  @media (max-width: $mobile) {
+    width: 300px;
+    margin-right: 0;
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  &-item {
+    padding: 15px;
+    text-align: center;
+    @media (max-width: $mobile) {
+      width: 50%;
+    }
+    &.first {
+      background: $yellow;
+    }
+    &.second {
+      background: $green;
+    }
+    span {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      border-top: 1px solid black;
+      padding-top: 5px;
+      margin: 0;
+      white-space: nowrap;
+    }
+  }
+}
